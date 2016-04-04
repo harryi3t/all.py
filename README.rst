@@ -6,7 +6,6 @@
 
 .. image:: https://img.shields.io/pypi/v/all.svg
    :target: https://pypi.python.org/pypi/all
-\
 
 	
 
