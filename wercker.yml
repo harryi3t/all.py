@@ -2,6 +2,18 @@ box: python
 build:
   steps:
     - script:
+        name : move source
+        # wercker variables:
+        # http://old-devcenter.wercker.com/articles/introduction/pipeline.html
+        code : |-
+            # sometimes scripts requires same folder name
+            # /pipeline/source - default wercker pwd
+            # /pipeline/source/owner/repo/ - new
+            mkdir tetet/etetet/et/et/et/et
+            path="$WERCKER_SOURCE_DIR/$WERCKER_GIT_OWNER/$WERCKER_GIT_REPOSITORY"
+            mkdir -p "$path"
+            export WERCKER_SOURCE_DIR="$path"
+    - script:
         name: "init"
         code: |-
           #mv $PWD $WERCKER_GIT_DOMAIN/$WERCKER_GIT_OWNER/$WERCKER_GIT_REPOSITORY
