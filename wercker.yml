@@ -7,9 +7,8 @@ build:
         # http://old-devcenter.wercker.com/articles/introduction/pipeline.html
         code : |-
             # sometimes scripts requires same folder name
-            # /pipeline/source - default wercker pwd
-            # /pipeline/source/owner/repo/ - new
-            mkdir tetet/etetet/et/et/et/et
+            # /pipeline/source - default $WERCKER_SOURCE_DIR
+            # /pipeline/source/owner/repo/ - new $WERCKER_SOURCE_DIR
             path="$WERCKER_SOURCE_DIR/$WERCKER_GIT_OWNER/$WERCKER_GIT_REPOSITORY"
             mkdir -p "$path"
             export WERCKER_SOURCE_DIR="$path"
