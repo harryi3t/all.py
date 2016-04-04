@@ -1,1 +1,1 @@
-all(module) - get dict with module public objects
+all(module) function - get dict with module public objects
