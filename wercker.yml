@@ -9,7 +9,11 @@ build:
             # sometimes scripts requires same folder name as repo
             # /pipeline/source - default $WERCKER_SOURCE_DIR
             # change to /pipeline/repo/
-            dst="$WERCKER_ROOT/$WERCKER_GIT_REPOSITORY"
+            echo WERCKER_ROOT=$WERCKER_ROOT
+            echo WERCKER_SOURCE_DIR=$WERCKER_SOURCE_DIR
+            echo WERCKER_GIT_OWNER=$WERCKER_GIT_OWNER
+            echo WERCKER_GIT_REPOSITORY=$WERCKER_GIT_REPOSITORY
+            dst="${WERCKER_SOURCE_DIR%/*}/$WERCKER_GIT_REPOSITORY"
             ( set -x; mv "$WERCKER_SOURCE_DIR" "$dst" )
             #WERCKER_SOURCE_DIR="$WERCKER_SOURCE_DIR/$WERCKER_GIT_OWNER/$WERCKER_GIT_REPOSITORY"
             #( set -x; mkdir -p "$WERCKER_SOURCE_DIR" )
