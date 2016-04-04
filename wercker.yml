@@ -8,4 +8,4 @@ build:
     - script:
         name: "tests"
         code: |-
-          Tests/run.sh
+          bash Tests/run.sh
