@@ -1,0 +1,6 @@
+# all(module) function
+>>> from all import *
+
+>>> import os
+>>> all(os)
+{...}
