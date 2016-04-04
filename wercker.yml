@@ -6,12 +6,14 @@ build:
         # wercker variables:
         # http://old-devcenter.wercker.com/articles/introduction/pipeline.html
         code : |-
-            # sometimes scripts requires same folder name
+            # sometimes scripts requires same folder name as repo
             # /pipeline/source - default $WERCKER_SOURCE_DIR
-            # /pipeline/source/owner/repo/ - new $WERCKER_SOURCE_DIR
-            WERCKER_SOURCE_DIR="$WERCKER_SOURCE_DIR/$WERCKER_GIT_OWNER/$WERCKER_GIT_REPOSITORY"
-            ( set -x; mkdir -p "$WERCKER_SOURCE_DIR" )
-            { set -x; export WERCKER_SOURCE_DIR="$WERCKER_SOURCE_DIR"; { set +x; } 2>/dev/null; }
+            # change to /pipeline/repo/
+            dst="$WERCKER_ROOT/$WERCKER_GIT_REPOSITORY"
+            ( set -x; mv "$WERCKER_SOURCE_DIR" "$WERCKER_ROOT/$WERCKER_GIT_REPOSITORY" )
+            #WERCKER_SOURCE_DIR="$WERCKER_SOURCE_DIR/$WERCKER_GIT_OWNER/$WERCKER_GIT_REPOSITORY"
+            #( set -x; mkdir -p "$WERCKER_SOURCE_DIR" )
+            { set -x; export WERCKER_SOURCE_DIR="$dst"; { set +x; } 2>/dev/null; }
             { set -x; cd "$WERCKER_SOURCE_DIR" || exit; { set +x; } 2>/dev/null; }
     - script:
         name: "init"
