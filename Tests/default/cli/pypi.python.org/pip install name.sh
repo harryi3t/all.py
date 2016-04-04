@@ -8,6 +8,7 @@ IFS=
 
 ! [ -e setup.py ] && echo "ERROR: setup.py NOT EXISTS" && exit 0
 
+[[ $PWD != *.py ]]
 IFS=.;set -- ${PWD##*/};IFS=
 name="$1"
 
