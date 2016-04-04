@@ -5,6 +5,7 @@ build:
         name: "init"
         code: |-
           [ -s requirements.txt ] && pip install -r requirements.txt
+          python setup.py install
     - script:
         name: "tests"
         code: |-
