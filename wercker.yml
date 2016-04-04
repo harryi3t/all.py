@@ -4,7 +4,7 @@ build:
     - script:
         name: "init"
         code: |-
-          mv $PWD $WERCKER_GIT_DOMAIN/$WERCKER_GIT_OWNER/$WERCKER_GIT_REPOSITORY
+          #mv $PWD $WERCKER_GIT_DOMAIN/$WERCKER_GIT_OWNER/$WERCKER_GIT_REPOSITORY
           [ -s requirements.txt ] && pip install -r requirements.txt
           python setup.py install
           pwd
