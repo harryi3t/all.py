@@ -3,14 +3,11 @@
 </p>
 
 [![Build Status](https://travis-ci.org/russianidiot/all.py.svg?branch=master)](https://travis-ci.org/russianidiot/all.py)
-
 [![Codacy](https://img.shields.io/codacy/1877ec57eff844eb85872798fb8428c2.svg)](https://www.codacy.com/app/russianidiot-github/all-py/dashboard)
-
+[![Code Climate](https://img.shields.io/codeclimate/russianidiot/all.py/flow.svg)](https://codeclimate.com/github/russianidiot/all.py)
 [![PyPI](https://img.shields.io/pypi/pyversions/all.svg)](https://pypi.python.org/pypi/all)
 [![PyPI](https://img.shields.io/pypi/dm/all.svg)](https://pypi.python.org/pypi/all)
-
 [![PyPI](https://img.shields.io/pypi/dw/all.svg)](https://pypi.python.org/pypi/all)
-
 [![PyPI](https://img.shields.io/pypi/dd/all.svg)](https://pypi.python.org/pypi/all)
 
 	
