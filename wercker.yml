@@ -7,29 +7,22 @@ build:
         # http://old-devcenter.wercker.com/articles/introduction/pipeline.html
         code : |-
             # sometimes scripts requires same folder name as repo
-            # /pipeline/source - default $WERCKER_SOURCE_DIR
-            # change to /pipeline/repo/
-            echo WERCKER_ROOT=$WERCKER_ROOT
-            echo WERCKER_SOURCE_DIR=$WERCKER_SOURCE_DIR
-            echo WERCKER_GIT_OWNER=$WERCKER_GIT_OWNER
-            echo WERCKER_GIT_REPOSITORY=$WERCKER_GIT_REPOSITORY
-            dst="${WERCKER_SOURCE_DIR%/*}/$WERCKER_GIT_REPOSITORY"
-            ( set -x; mv "$WERCKER_SOURCE_DIR" "$dst" )
-            #WERCKER_SOURCE_DIR="$WERCKER_SOURCE_DIR/$WERCKER_GIT_OWNER/$WERCKER_GIT_REPOSITORY"
-            #( set -x; mkdir -p "$WERCKER_SOURCE_DIR" )
+            # /pipeline/source/ - default $WERCKER_SOURCE_DIR
+            # /pipeline/source/owner/repo/ - new
+            dst="$WERCKER_SOURCE_DIR/$WERCKER_GIT_OWNER/$WERCKER_GIT_REPOSITORY"
+            tmp="$WERCKER_SOURCE_DIR".tmp
+            ( set -x; mv "$WERCKER_SOURCE_DIR" "$tmp" )
+            ( set -x; mkdir -p "${dst%/*}" )
+            ( set -x; mv "$tmp" "$dst" )
             { set -x; export WERCKER_SOURCE_DIR="$dst"; { set +x; } 2>/dev/null; }
             { set -x; cd "$WERCKER_SOURCE_DIR" || exit; { set +x; } 2>/dev/null; }
     - script:
         name: "init"
         code: |-
           #mv $PWD $WERCKER_GIT_DOMAIN/$WERCKER_GIT_OWNER/$WERCKER_GIT_REPOSITORY
-          [ -s requirements.txt ] && pip install -r requirements.txt
-          python setup.py install
-          pwd
-          echo WERCKER_SOURCE_DIR=$WERCKER_SOURCE_DIR
-          echo WERCKER_GIT_OWNER=$WERCKER_GIT_OWNER
-          echo WERCKER_GIT_REPOSITORY=$WERCKER_GIT_REPOSITORY
+          [ -f requirements.txt ] && [ -s requirements.txt ] && ( set -x; pip install -r requirements.txt )
+          ( set -x; python setup.py install )
     - script:
         name: "tests"
         code: |-
-          bash Tests/run.sh
+          ( set -x; bash Tests/run.sh )

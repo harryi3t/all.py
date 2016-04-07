@@ -8,7 +8,8 @@ IFS=
 
 ! [ -e setup.py ] && echo "ERROR: setup.py NOT EXISTS" && exit 0
 
-[[ $PWD != *.py ]]
+# folder name must be same as original repo name
+# wercker.com set folder to /pipeline/source/
 IFS=.;set -- ${PWD##*/};IFS=
 name="$1"
 
@@ -19,4 +20,13 @@ json=$(curl -s "$url") || exit 0 # no connection?
 	echo "SKIP: pypi.python.org/pypi/$name NOT EXISTS"
 	exit 0
 }
-( set -x; pip install -U "$name" )
+# ( set -x; pip install -U "$name" )
+# setuptools upgrade produce errors if installed from binary
+# pip <8: --no-use-wheel
+# pip 8+: --no-binary
+grep="$(pip install --help | grep "no-binary")"
+[[ -z $grep ]] && set -- pip install --no-use-wheel -U "$name"
+[[ -n $grep ]] && set -- pip install --no-binary -U "$name"
+
+( set -x; "$@" )
+

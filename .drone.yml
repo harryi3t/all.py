@@ -1,0 +1,26 @@
+build:
+  image: python:$$PYTHON_VERSION
+  environment:
+    - PYTHONIOENCODING="UTF-8"
+  commands:
+  - '[ -f requirements.txt ] && [ -s requirements.txt ] && cat requirements.txt;:'
+  - '[ -f requirements.txt ] && [ -s requirements.txt ] && pip install -r requirements.txt;:'
+  - python setup.py install
+
+script:
+  - bash Tests/run.sh
+
+#notify:
+  #email:
+    #recipients:
+      #- username@gmail.com
+  #gitter:
+    # webhook: https://webhooks.gitter.im/e/$$GITTER_KEY
+
+
+matrix:
+  PYTHON_VERSION: # http://docs.drone.io/python.html
+    - 2.7
+    - 3.2
+    - 3.3
+

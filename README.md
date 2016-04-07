@@ -1,56 +1,55 @@
 <p align="center">
-	<b>all(module) - get dict with module public objects</b>
+	<b>all(module) function - get dict with module public objects</b>
 </p>
 
-[![Build Status](https://travis-ci.org/russianidiot/all.py.svg?branch=master)](https://travis-ci.org/russianidiot/all.py)
-[![Codacy](https://img.shields.io/codacy/1877ec57eff844eb85872798fb8428c2.svg)](https://www.codacy.com/app/russianidiot-github/all-py/dashboard)
-[![Code Climate](https://img.shields.io/codeclimate/github/russianidiot/all.py.svg)](https://codeclimate.com/github/russianidiot/all.py)
+![python](https://img.shields.io/badge/language-python-blue.svg?style=plastic)
 [![PyPI](https://img.shields.io/pypi/pyversions/all.svg)](https://pypi.python.org/pypi/all)
-[![PyPI](https://img.shields.io/pypi/dm/all.svg)](https://pypi.python.org/pypi/all)
-[![PyPI](https://img.shields.io/pypi/dw/all.svg)](https://pypi.python.org/pypi/all)
-[![PyPI](https://img.shields.io/pypi/dd/all.svg)](https://pypi.python.org/pypi/all)
 
-	
+[![PyPI](https://img.shields.io/pypi/v/all.svg)](https://pypi.python.org/pypi/all)
+[![Code Climate](https://img.shields.io/codeclimate/github/russianidiot/all.py.svg)](https://codeclimate.com/github/russianidiot/all.py)
 
-### Install
+[![Build Status](https://travis-ci.org/russianidiot/all.py.svg?branch=master)](https://travis-ci.org/russianidiot/all.py)
 
-[github.com](http://github.com/russianidiot/all.py):
-`pip install git+git://github.com/russianidiot/all.py.git`
+#### Install
 
-[pypi.python.org](https://pypi.python.org/pypi/all/): `pip install all`
+pip: `[sudo] pip install all`
 
-[download](https://github.com/russianidiot/all.py/archive/master.zip): `[ -e requirements.txt ] && pip install -r requirements.txt; python setup.py install`
+read more about install - install.md
 
-	
+#### Usage
 
-	
+```python
+# all(module) function
+>>> from all import *
 
-	
+>>> import os
+>>> all(os)
+{...}
 
-* * *
+```
 
-### Feedback
+[Examples/](https://github.com/russianidiot/all.py/tree/master/Examples)
 
-[![GitHub issues](https://img.shields.io/github/issues/russianidiot/all.py.svg)](https://github.com/russianidiot/all.py/issues) - Github Issues
+source code [py_modules/__pycache__](https://github.com/russianidiot/all.py/blob/master/py_modules/__pycache__)
 
-[![Join the chat at https://gitter.im/russianidiot/all.py](https://badges.gitter.im/russianidiot/all.py.svg)](https://gitter.im/russianidiot/all.py) - Chat (english/russian) 
+Feedback
+[![GitHub issues](https://img.shields.io/github/issues/russianidiot/all.py.svg)](https://github.com/russianidiot/all.py/issues)
+[![Join the chat at https://gitter.im/russianidiot/all.py](https://badges.gitter.im/russianidiot/all.py.svg)](https://gitter.im/russianidiot/all.py)
+[![GitHub followers](https://img.shields.io/github/followers/russianidiot.svg?style=social&label=Follow)](https://github.com/russianidiot)
 
 * * *
 
 <p align="center">
-Python packages <a href="http://russianidiot.github.io/python/">russianidiot.github.io/python/</a>
-<img src="http://russianidiot.github.io/images/python/16.png" /><br />
-cli packages<a href="http://russianidiot.github.io/python/">russianidiot.github.io/cli/</a>
-<img src="http://russianidiot.github.io/images/cli/16.png" /><br />
+	Python packages <a href="http://russianidiot.github.io/python/">russianidiot.github.io/python/</a>
+	<img src="http://russianidiot.github.io/images/python/16.png" />
+</p>
+<p align="center">
+	cli packages <a href="http://russianidiot.github.io/python/">russianidiot.github.io/cli/</a>
+<img src="http://russianidiot.github.io/images/cli/16.png" />
 </p>
 
 <p align="center">
 	repos list <a href="http://russianidiot.github.io/">russianidiot.github.io</a> <img src="http://russianidiot.github.io/images/star/16.png" />
-</p>
-
-<p align="center">
-	follow me <a href="http://github.com/russianidiot">github.com/russianidiot</a>
-<img src="http://russianidiot.github.io/images/github/16.png" />
 </p>
 
 <p align="center">
