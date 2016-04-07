@@ -1,0 +1,22 @@
+# https://docs.landscape.io/configuration.html
+autodetect: yes
+doc-warnings: yes
+test-warnings: no
+strictness: veryhigh
+max-line-length: 120
+#uses:
+    #- django
+    #- celery
+    #- flask
+autodetect: yes
+#requirements:
+   # - deps/core.txt
+ignore-paths:
+    - Examples
+    - Tests
+#ignore-patterns:
+    #- ^example/doc_.*\.py$
+    #- (^|/)docs(/|$)
+python-targets:
+    - 2
+    - 3
