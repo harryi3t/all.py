@@ -4,9 +4,9 @@
 
 ![python](https://img.shields.io/badge/language-python-blue.svg?style=plastic)
 [![PyPI](https://img.shields.io/pypi/pyversions/all.svg)](https://pypi.python.org/pypi/all)
-[![PyPI](https://img.shields.io/pypi/v/all.svg)](https://pypi.python.org/pypi/all)
 [![Codacy](https://img.shields.io/codacy/1877ec57eff844eb85872798fb8428c2.svg)](https://www.codacy.com/app/russianidiot-github/all-py/dashboard)
 [![Code Climate](https://img.shields.io/codeclimate/github/russianidiot/all.py.svg)](https://codeclimate.com/github/russianidiot/all.py)
+[![PyPI](https://img.shields.io/pypi/v/all.svg)](https://pypi.python.org/pypi/all)
 [![Build Status](https://travis-ci.org/russianidiot/all.py.svg?branch=master)](https://travis-ci.org/russianidiot/all.py)
 
 #### Install
