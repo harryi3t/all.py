@@ -1,5 +1,5 @@
 build:
-  image: python:$$PYTHON_VERSION
+  image: python2.7
   environment:
     - PYTHONIOENCODING="UTF-8"
   commands:
