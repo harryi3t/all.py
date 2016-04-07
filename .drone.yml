@@ -1,11 +1,15 @@
+clone:
+  path: github.com/russianidiot/all.py
+
 build:
   image: python2.7
   environment:
     - PYTHONIOENCODING="UTF-8"
   commands:
-  - '[ -f requirements.txt ] && [ -s requirements.txt ] && cat requirements.txt;:'
-  - '[ -f requirements.txt ] && [ -s requirements.txt ] && pip install -r requirements.txt;:'
-  - python setup.py install
+    #- '[ -f requirements.txt ] && [ -s requirements.txt ] && cat requirements.txt;:'
+    #- '[ -f requirements.txt ] && [ -s requirements.txt ] && pip install -r requirements.txt;:'
+    - pip install -r requirements.txt
+    - python setup.py install
 
 script:
   - bash Tests/run.sh
