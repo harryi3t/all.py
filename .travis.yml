@@ -45,11 +45,7 @@ before_install:
   - env
 
 install:
-  - set -e # Exit immediately if a subshell command exits with a non-zero status (man sh).
-  - '[ -f requirements.txt ] && [ -s requirements.txt ] && cat requirements.txt;:'
-  - '[ -f requirements.txt ] && [ -s requirements.txt ] && pip install -r requirements.txt;:'
-  - python setup.py install
-  - pip install coveralls
+  - bash Tests/install.sh
 
 before_script:
   - pwd
