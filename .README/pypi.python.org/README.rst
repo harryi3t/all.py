@@ -9,6 +9,10 @@
 .. image:: https://img.shields.io/codeclimate/github/russianidiot/all.py.svg
    :target: https://codeclimate.com/github/russianidiot/all.py
 
+.. image:: https://landscape.io/github/russianidiot/all.py/master/landscape.svg?style=flat
+   :target: https://landscape.io/github/russianidiot/all.py/master
+   :alt: Code Health
+
 Install
 ```````
 
