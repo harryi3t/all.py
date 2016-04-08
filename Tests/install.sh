@@ -11,6 +11,7 @@
 
 [ -f requirements.txt ] && [ -s requirements.txt ] && {
 	( set -x; cat requirements.txt ) || exit
+	( set -x; pip --version ) || exit
 	( set -x; pip install -r requirements.txt ) || exit
 }
 ( set -x; python setup.py install )

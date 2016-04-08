@@ -29,11 +29,10 @@ IFS=' ';set $pip;IFS=
 version=$2
 IFS=.;set $version;IFS=
 major=$1;minor=$2;patch=$3
-echo major=$major
-echo minor=$minor
-echo patch=$patch
+
 set -- pip install --no-use-wheel -U "$name"
-[[ $major -ge 7 ]] set -- pip install --no-binary -U "$name"
-echo args=$@
+# pip 7+, --no-binary
+[[ $major -ge 7 ]] && set -- pip install --no-binary -U "$name"
+
 ( set -x; "$@" )
 
