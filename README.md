@@ -9,7 +9,7 @@
 [![Code Climate](https://img.shields.io/codeclimate/github/russianidiot/all.py.svg)](https://codeclimate.com/github/russianidiot/all.py)
 [![PyPI](https://img.shields.io/pypi/v/all.svg)](https://pypi.python.org/pypi/all)
 
-|Travis|Codeship|
+|travis-ci.org|Codeship|
 |---|---|
 |[![Build Status](https://travis-ci.org/russianidiot/all.py.svg?branch=master)](https://travis-ci.org/russianidiot/all.py)|[![codeship](https://img.shields.io/codeship/None.svg)](https://codeship.com/projects/None)
 |
