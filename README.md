@@ -11,7 +11,7 @@
 
 |travis-ci.org|Codeship|
 |---|---|
-|[![Build Status](https://travis-ci.org/russianidiot/all.py.svg?branch=master)](https://travis-ci.org/russianidiot/all.py)|[![codeship](https://img.shields.io/codeship/None.svg)](https://codeship.com/projects/None)
+|[![Build Status](https://travis-ci.org/russianidiot/all.py.svg?branch=master)](https://travis-ci.org/russianidiot/all.py)|[![codeship](https://img.shields.io/codeship/d125e850-df11-0133-f934-0a2f7bc63574.svg)](https://codeship.com/projects/144919)
 |
 
 #### Install
