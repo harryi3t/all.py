@@ -41,9 +41,9 @@ Examples
 
 .. _Examples/: https://github.com/russianidiot/all.py/tree/master/Examples
 
-source code `https://github.com/russianidiot/all.py/blob/master/py_modules/__pycache__`_
+source code `https://github.com/russianidiot/all.py/blob/master/py_modules/all.py`_
 
-.. _https://github.com/russianidiot/all.py/blob/master/py_modules/__pycache__/: https://github.com/russianidiot/all.py/blob/master/py_modules/__pycache__
+.. _https://github.com/russianidiot/all.py/blob/master/py_modules/all.py/: https://github.com/russianidiot/all.py/blob/master/py_modules/all.py
 
 Feedback
 

@@ -1,7 +1,3 @@
-<p align="center">
-	<b>all(module) function - get dict with module public objects</b>
-</p>
-
 ![python](https://img.shields.io/badge/language-python-blue.svg)[![PyPI](https://img.shields.io/pypi/pyversions/all.svg)](https://pypi.python.org/pypi/all)
 [![Codacy](https://img.shields.io/codacy/1877ec57eff844eb85872798fb8428c2.svg)](https://www.codacy.com/app/russianidiot-github/all-py/dashboard)[![Code Health](https://landscape.io/github/russianidiot/all.py/master/landscape.svg?style=flat)](https://landscape.io/github/russianidiot/all.py/master)[![Code Climate](https://img.shields.io/codeclimate/github/russianidiot/all.py.svg)](https://codeclimate.com/github/russianidiot/all.py)
 
@@ -11,6 +7,10 @@
 [![PyPI](https://img.shields.io/pypi/dm/all.svg)](https://pypi.python.org/pypi/all)
 [![PyPI](https://img.shields.io/pypi/dw/all.svg)](https://pypi.python.org/pypi/all)
 [![PyPI](https://img.shields.io/pypi/dd/all.svg)](https://pypi.python.org/pypi/all)
+
+<p align="center">
+	<b>all(module) function - get dict with module public objects</b>
+</p>
 
 #### Install
 
@@ -30,7 +30,7 @@ pip: `[sudo] pip install all`
 
 [Examples/](https://github.com/russianidiot/all.py/tree/master/Examples)
 
-source code [py_modules/__pycache__](https://github.com/russianidiot/all.py/blob/master/py_modules/__pycache__)
+source code [py_modules/all.py](https://github.com/russianidiot/all.py/blob/master/py_modules/all.py)
 
 Feedback
 [![GitHub issues](https://img.shields.io/github/issues/russianidiot/all.py.svg)](https://github.com/russianidiot/all.py/issues)
