@@ -1,4 +1,4 @@
-.. image:: https://img.shields.io/badge/language-python-blue.svg?style=plastic
+.. image:: https://img.shields.io/badge/language-python-blue.svg
 
 .. image:: https://img.shields.io/pypi/pyversions/all.svg
    :target: https://pypi.python.org/pypi/all
