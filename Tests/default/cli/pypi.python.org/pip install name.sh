@@ -22,8 +22,7 @@ json=$(curl -s "$url") || exit 0 # no connection?
 }
 # ( set -x; pip install -U "$name" )
 # setuptools upgrade produce errors if installed from binary
-# pip <7: --no-use-wheel
-# pip 7+: --no-binary
+# https://pip.pypa.io/en/stable/news/
 pip="$(pip --version)" || exit
 IFS=' ';set $pip;IFS=
 version=$2
