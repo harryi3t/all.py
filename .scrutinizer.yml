@@ -1,3 +1,4 @@
+# https://scrutinizer-ci.com/docs/configuration
 checks:
   python:
     imports_relative_import: true
