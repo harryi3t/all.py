@@ -19,9 +19,7 @@ build:
     - script:
         name: "init"
         code: |-
-          #mv $PWD $WERCKER_GIT_DOMAIN/$WERCKER_GIT_OWNER/$WERCKER_GIT_REPOSITORY
-          [ -f requirements.txt ] && [ -s requirements.txt ] && ( set -x; pip install -r requirements.txt )
-          ( set -x; python setup.py install )
+          ( set -x; bash Tests/install.sh )
     - script:
         name: "tests"
         code: |-

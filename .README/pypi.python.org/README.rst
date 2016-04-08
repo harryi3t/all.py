@@ -13,8 +13,8 @@
    :target: https://landscape.io/github/russianidiot/all.py/master
    :alt: Code Health
 
-.. image:: https://img.shields.io/codeship/144919.svg
-   :target: https://codeship.com/projects/144919
+.. image:: https://img.shields.io/codeship/None.svg
+   :target: https://codeship.com/projects/None
 
 Install
 ```````
