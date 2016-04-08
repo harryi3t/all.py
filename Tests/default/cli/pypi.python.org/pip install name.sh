@@ -30,7 +30,9 @@ version=$2
 IFS=.;set $version;IFS=
 major=$1;minor=$2;patch=$3
 
-set -- pip install --no-use-wheel -U "$name"
+set -- pip install -U "$name"
+# pip 6+, --no-use-wheel
+[[ $major -ge 6 ]] && set -- pip install --no-use-wheel -U "$name"
 # pip 7+, --no-binary
 [[ $major -ge 7 ]] && set -- pip install --no-binary -U "$name"
 
