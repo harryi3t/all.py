@@ -1,4 +1,6 @@
+# scrutinizer-ci.com configurations
 # https://scrutinizer-ci.com/docs/configuration
+# https://scrutinizer-ci.com/docs/guides/python/continuous-integration-deployment
 checks:
   python:
     code_rating: true
@@ -15,3 +17,12 @@ tools:
   external_code_coverage:
     timeout: 1200
     runs: 6
+
+before_commands:
+    - bash Tests/install.sh
+
+build:
+  tests:
+    override:
+      - bash Tests/run.sh 
+
