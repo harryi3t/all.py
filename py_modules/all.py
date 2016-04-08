@@ -3,7 +3,7 @@ from copy import *
 from caller_module import *
 from public import *
 
-ignored = ['__builtins__', '__file__', 'modules', '__package__', '__name__', '__doc__']
+IGNORED = ['__builtins__', '__file__', 'modules', '__package__', '__name__', '__doc__']
 
 class AttributeError(AttributeError): pass
 
@@ -18,7 +18,7 @@ def all(module):
     else:
         keys = module.__dict__.keys()
     for k in keys:
-        if k not in ignored:
+        if k not in IGNORED:
             if k in module.__dict__:
                 kwargs[k] = module.__dict__[k]
             else:
