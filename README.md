@@ -11,8 +11,7 @@
 
 |travis|codeship|wercker|
 |---|---|---|
-|[![Build Status](https://travis-ci.org/russianidiot/all.py.svg?branch=master)](https://travis-ci.org/russianidiot/all.py)|[![codeship](https://img.shields.io/codeship/d125e850-df11-0133-f934-0a2f7bc63574.svg)](https://codeship.com/projects/144919)
-|[![Wercker](https://img.shields.io/wercker/ci/russianidiot/all.py.svg)](https://app.wercker.com/#applications/None/)|
+|[![Build Status](https://travis-ci.org/russianidiot/all.py.svg?branch=master)](https://travis-ci.org/russianidiot/all.py)|[![codeship](https://img.shields.io/codeship/d125e850-df11-0133-f934-0a2f7bc63574.svg)](https://codeship.com/projects/144919)|[![Wercker](https://img.shields.io/wercker/ci/russianidiot/all.py.svg)](https://app.wercker.com/#applications/None/)|
 
 #### Install
 
