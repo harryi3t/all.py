@@ -26,8 +26,3 @@ def all(module):
                 raise AttributeError(err)
     return kwargs
 
-
-if __name__=="__main__":
-    import sys
-    print(all(sys.modules["__main__"]))
-    print(all(sys))

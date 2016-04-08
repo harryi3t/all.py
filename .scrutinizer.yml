@@ -1,4 +1,9 @@
 # https://scrutinizer-ci.com/docs/configuration
+checks:
+  python:
+    code_rating: true
+    duplicate_code: true
+
 filter:
   excluded_paths:
     - setup.py
