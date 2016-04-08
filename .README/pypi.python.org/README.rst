@@ -21,8 +21,6 @@ Install
 
 pip: `[sudo] pip install all`
 
-read more about install - install.md
-
 Usage
 `````
 
