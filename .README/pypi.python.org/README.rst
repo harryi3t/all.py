@@ -3,7 +3,7 @@
 .. image:: https://img.shields.io/pypi/pyversions/all.svg
    :target: https://pypi.python.org/pypi/all
 
-.. image:: https://img.shields.io/codacy/1877ec57eff844eb85872798fb8428c2.svg
+.. image:: https://img.shields.io/codacy/None.svg
    :target: https://www.codacy.com/app/russianidiot-github/all-py/dashboard
 
 .. image:: https://img.shields.io/codeclimate/github/russianidiot/all.py.svg
