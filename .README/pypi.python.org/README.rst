@@ -11,7 +11,7 @@
 
 .. image:: https://landscape.io/github/russianidiot/all.py/master/landscape.svg?style=flat
    :target: https://landscape.io/github/russianidiot/all.py/master
-   :alt: Code Health
+   :alt: landscape.io
 
 .. image:: https://img.shields.io/codeship/d125e850-df11-0133-f934-0a2f7bc63574.svg
    :target: https://codeship.com/projects/144919

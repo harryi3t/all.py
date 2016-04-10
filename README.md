@@ -1,12 +1,11 @@
 ![python](https://img.shields.io/badge/language-python-blue.svg)[![PyPI](https://img.shields.io/pypi/pyversions/all.svg)](https://pypi.python.org/pypi/all)
-[![Code Health](https://landscape.io/github/russianidiot/all.py/master/landscape.svg?style=flat)](https://landscape.io/github/russianidiot/all.py/master)[![Code Climate](https://img.shields.io/codeclimate/github/russianidiot/all.py.svg)](https://codeclimate.com/github/russianidiot/all.py)
+[![landscape.io](https://landscape.io/github/russianidiot/all.py/master/landscape.svg?style=flat)](https://landscape.io/github/russianidiot/all.py/master)[![Code Climate](https://img.shields.io/codeclimate/github/russianidiot/all.py.svg)](https://codeclimate.com/github/russianidiot/all.py)
 [![Code Health](https://scrutinizer-ci.com/g/russianidiot/all.py/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/russianidiot/all.py)
 
 [![Build Status](https://travis-ci.org/russianidiot/all.py.svg?branch=master)](https://travis-ci.org/russianidiot/all.py)[![drone.io](https://drone.io/github.com/russianidiot/all.py/status.png)](https://drone.io/github.com/russianidiot/all.py)[![codeship](https://img.shields.io/codeship/d125e850-df11-0133-f934-0a2f7bc63574.svg)](https://codeship.com/projects/144919)[![Wercker](https://img.shields.io/wercker/ci/russianidiot/all.py.svg)](https://app.wercker.com/#applications/None/)
 
 [![PyPI](https://img.shields.io/pypi/v/all.svg)](https://pypi.python.org/pypi/all)
 [![PyPI](https://img.shields.io/pypi/dm/all.svg)](https://pypi.python.org/pypi/all)
-[![PyPI](https://img.shields.io/pypi/dw/all.svg)](https://pypi.python.org/pypi/all)
 [![PyPI](https://img.shields.io/pypi/dd/all.svg)](https://pypi.python.org/pypi/all)
 
 <p align="center">
@@ -31,7 +30,7 @@ pip: `[sudo] pip install all`
 
 [Examples/](https://github.com/russianidiot/all.py/tree/master/Examples)
 
-source code [py_modules/all.py](https://github.com/russianidiot/all.py/blob/master/py_modules/all.py)
+source code [{$source_name}](https://github.com/russianidiot/all.py/blob/master/py_modules/all.py)
 
 Feedback
 [![GitHub issues](https://img.shields.io/github/issues/russianidiot/all.py.svg)](https://github.com/russianidiot/all.py/issues)
