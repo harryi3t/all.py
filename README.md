@@ -14,7 +14,8 @@
 
 #### Install
 
-pip: `[sudo] pip install all`
+pip: 
+`[sudo] pip install all`
 
 #### Usage
 
@@ -30,7 +31,8 @@ pip: `[sudo] pip install all`
 
 [Examples/](https://github.com/russianidiot/all.py/tree/master/Examples)
 
-source code [{$source_name}](https://github.com/russianidiot/all.py/blob/master/py_modules/all.py)
+Sources:
+*	[py_modules/all.py](https://github.com/russianidiot/all.py/blob/master/py_modules/all.py)
 
 Feedback
 [![GitHub issues](https://img.shields.io/github/issues/russianidiot/all.py.svg)](https://github.com/russianidiot/all.py/issues)
