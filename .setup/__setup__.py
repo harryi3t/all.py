@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 import imp
 import os
-from os.path import abspath, dirname, join,splitext
+from os.path import abspath, dirname, exists, join,splitext
 import sys
 import warnings
 
