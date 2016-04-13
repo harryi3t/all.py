@@ -127,7 +127,7 @@ def main():
         if len(sys.argv) == 1 and len(setup_kwargs) > 0:  # debug
             print("%s: %s" % ("~/.setup_kwargs.py", setup_kwargs))
 
-    kwargs = module_kwargs(sys.modules["__main__"])
+    kwargs = _module_kwargs(sys.modules["__main__"])
     if "name" in kwargs:
         name = kwargs["name"]
         del kwargs["name"]
