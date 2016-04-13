@@ -15,7 +15,7 @@ def load_module(path):
             raise ValueError("ERROR: %s __all__ required" % path)
         return module
 
-data_files = [] 
+data_files = []
 path=join(repo,"data_files.py")
 if exists(path):
 	module = load_module(path)
