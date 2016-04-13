@@ -1,11 +1,9 @@
 #!/usr/bin/env python
-from copy import *
-from caller_module import *
+from copy import copy
+from caller_module import caller_module
 from public import public
 
 IGNORED = ['__builtins__', '__file__', 'modules', '__package__', '__name__', '__doc__']
-
-class AttributeError(AttributeError): pass
 
 @public
 def all(module):
