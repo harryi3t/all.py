@@ -3,16 +3,13 @@
 .. image:: https://img.shields.io/pypi/pyversions/all.svg
    :target: https://pypi.python.org/pypi/all
 
-.. image:: https://img.shields.io/pypi/pyversions/all.svg
-   :target: https://pypi.python.org/pypi/all
-
- |codacy| |landscape| |codeclimate| |scrutinizer|
+|codacy| |landscape| |codeclimate| |scrutinizer|
 
 .. |scrutinizer| image:: https://scrutinizer-ci.com/g/russianidiot/all.py/badges/quality-score.png?b=master
    :target: https://scrutinizer-ci.com/g/russianidiot/all.py/master
    :alt: scrutinizer-ci.com
 
-.. |codacy| image:: https://img.shields.io/codacy/None.svg
+.. |codacy| image:: https://img.shields.io/codacy/1877ec57eff844eb85872798fb8428c2.svg
    :target: https://www.codacy.com/app/russianidiot-github/all-py/dashboard
    :alt: codacy.com
 
