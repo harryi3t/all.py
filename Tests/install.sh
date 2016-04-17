@@ -14,4 +14,9 @@
 	( set -x; pip --version ) || exit
 	( set -x; pip install -r requirements.txt ) || exit
 }
+[ -f Tests/requirements.txt ] && [ -s Tests/requirements.txt ] && {
+	( set -x; cat Tests/requirements.txt ) || exit
+	( set -x; pip --version ) || exit
+	( set -x; pip install -r Tests/requirements.txt ) || exit
+}
 ( set -x; python setup.py install )
